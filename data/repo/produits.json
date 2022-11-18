@@ -96,7 +96,7 @@
         "nom": "Tomate",
         "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
         "prix": 24.76,
-        "qte_inventaire": 38,
+        "qte_inventaire": 37,
         "categorie": {
             "id": 2,
             "nom": "Banane",
@@ -109,7 +109,7 @@
         "nom": "concombre",
         "description": "pas un jouet",
         "prix": 2.23,
-        "qte_inventaire": 8,
+        "qte_inventaire": 7,
         "categorie": {
             "id": 1,
             "nom": "Prunier",
