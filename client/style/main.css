@@ -10,15 +10,10 @@ body {
     background-color: #26272b ;
 }
 
-footer{
-    border: 2px solid black;
-    align-content: center;
-    margin: auto;
-    padding: 20px;
-    clear: both;
-}
 .custom-footer
 {
+    border: 2px solid black;
+    clear: both;
     background-color:#26272b;
     padding:45px 0 20px;
     font-size:15px;
@@ -26,15 +21,6 @@ footer{
     color:#737373;
 }
 
-.custom-footer hr
-{
-    border-top-color:#bbb;
-    opacity:0.5
-}
-.custom-footer hr.small
-{
-    margin:20px 0
-}
 .custom-footer h6
 {
     color: #cc0f0f;
@@ -99,21 +85,58 @@ nav{
     padding-top: 4px;
     width: 400px;
     margin: auto;
-    border-radius: 25px;
+    border-radius: 15px;
 }
-
-#haut-de-page {
-    padding-top: 4px;
+.container1{
+    align-items: stretch;
 }
-
 .titre-logo a
 {
-    color: #e31818
+    color: #e31818;
+    text-decoration:none;
+    margin-left: 30px;
+    font-size: 64px;
+    font-family: "Impact";
+    letter-spacing: 2px;
 }
 .titre-logo a:active,.titre-logo a:focus,.titre-logo a:hover
 {
     color: #e31818;
     text-decoration:none;
+}
+
+.barre-recherche
+{
+    background: #d9d9d9;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    alignment: right;
+}
+.barre-recherche input {
+    all: unset;
+    font: 16px system-ui;
+    color: #101010;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+.barre-recherche button
+{
+    border: 0;
+    border-radius: 50%;
+    width: 32px;
+    height: 30px;
+    cursor: pointer;
+    background: #26272b;
+}
+.barre-recherche button img
+{
+    width: 20px;
 }
 
 .barre-menu {
@@ -129,6 +152,7 @@ nav{
     padding: 14px 16px;
     text-decoration: none;
     transition: color 0.5s, background-color 0.5s;
+    border-radius: 15px;
 }
 
 .deroulant {
@@ -146,6 +170,7 @@ nav{
     font-family: inherit;
     margin: 0;
     transition: color 0.5s, background-color 0.5s;
+    border-radius: 15px;
 }
 
 .barre-menu a:hover, .deroulant:hover .btn-deroulant {
@@ -160,6 +185,7 @@ nav{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 15px;
 }
 
 .sous-menu a {
