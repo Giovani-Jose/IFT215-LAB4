@@ -1,18 +1,93 @@
 :root{
-    --fond-menu : #444444;
+    --fond-menu : #4b4a4a;
     --couleur-menu : aliceblue;
     --fond-menu-inverse: salmon;
     --couleur-menu-inverse: #223;
     --fond-menu-choisi: #123456;
 }
 
+body {
+    background-color: #26272b ;
+}
+
 footer{
     border: 2px solid black;
-    text-align: center;
-    width: 500px;
+    align-content: center;
     margin: auto;
     padding: 20px;
     clear: both;
+}
+.custom-footer
+{
+    background-color:#26272b;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#737373;
+}
+
+.custom-footer hr
+{
+    border-top-color:#bbb;
+    opacity:0.5
+}
+.custom-footer hr.small
+{
+    margin:20px 0
+}
+.custom-footer h6
+{
+    color: #cc0f0f;
+    font-size:16px;
+    text-transform:uppercase;
+    margin-top:5px;
+    letter-spacing:2px;
+    text-align: end;
+}
+.custom-footer h5
+{
+    color: #0083ff;
+    font-size:16px;
+    text-transform:uppercase;
+    margin-top:5px;
+    letter-spacing:2px;
+    text-align: start;
+}
+
+.custom-footer h2
+{
+    color: #ffffff;
+    font-size:32px;
+    text-transform:uppercase;
+    margin-top:20px;
+    letter-spacing:4px;
+    text-align: center;
+}
+.footer-links
+{
+    padding-left:0;
+    list-style:none;
+    text-align: start;
+}
+.footer-links a
+{
+    color: #9d9c9c
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+    color:#3366cc;
+    text-decoration:none;
+}
+
+.footer-info
+{
+    padding-left:0;
+    list-style:none;
+    text-align: end;
+}
+.footer-info li
+{
+    color: #9d9c9c;
 }
 
 nav{
@@ -22,6 +97,23 @@ nav{
 #menu-principal {
     background-color: var(--fond-menu, #000);
     padding-top: 4px;
+    width: 400px;
+    margin: auto;
+    border-radius: 25px;
+}
+
+#haut-de-page {
+    padding-top: 4px;
+}
+
+.titre-logo a
+{
+    color: #e31818
+}
+.titre-logo a:active,.titre-logo a:focus,.titre-logo a:hover
+{
+    color: #e31818;
+    text-decoration:none;
 }
 
 .barre-menu {
