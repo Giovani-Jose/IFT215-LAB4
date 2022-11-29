@@ -83,18 +83,19 @@ nav{
 #menu-principal {
     background-color: var(--fond-menu, #000);
     padding-top: 4px;
-    width: 400px;
+    width: 700px;
     margin: auto;
     border-radius: 15px;
+    margin-top: 30px;
+    align-content: space-between;
 }
-.container1{
-    align-items: stretch;
-}
+
 .titre-logo a
 {
     color: #e31818;
     text-decoration:none;
-    margin-left: 30px;
+    margin-left: 50px;
+    margin-top: 100px;
     font-size: 64px;
     font-family: "Impact";
     letter-spacing: 2px;
@@ -115,7 +116,8 @@ nav{
     border-radius: 60px;
     padding: 10px 20px;
     margin-top: 50px;
-    alignment: right;
+    position: absolute;
+    right: 150px;
 }
 .barre-recherche input {
     all: unset;
@@ -139,20 +141,42 @@ nav{
     width: 20px;
 }
 
+.btn-panier
+{
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: #9d9c9c;
+    position: absolute;
+    right: 100px;
+    margin-top: 50px;
+}
+
+.btn-panier img
+{
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 30px;
+}
+
 .barre-menu {
     overflow: hidden;
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
 }
 
 .barre-menu a {
     float: left;
     font-size: 16px;
     color: var(--couleur-menu);
-    text-align: center;
-    padding: 14px 16px;
+    padding: 14px 14px;
     text-decoration: none;
     transition: color 0.5s, background-color 0.5s;
     border-radius: 15px;
+    margin-bottom: 5px;
 }
 
 .deroulant {
