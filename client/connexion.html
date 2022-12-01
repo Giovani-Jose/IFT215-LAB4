@@ -1,0 +1,24 @@
+<h1 id="para-1" class="centrer">Connexion</h1>
+<section id="section-inscription">
+    <div class="alert" style='display:none' id="error-alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <p id="msg-erreur">Erreur</p>
+    </div>
+    <form>
+        <fieldset id="#renseignement-auth">
+            <legend>Renseignements d'authentification</legend>
+            <div class="group">
+                <label for="courriel">Adresse courriel</label>
+                <input type="email" name="courriel" id="courriel" required/>
+            </div>
+            <div class="group">
+                <label for="mot-de-passe">Mot de passe</label>
+                <input type="password" name="mot-de-passe" id="mot-de-passe" required/>
+            </div>
+        </fieldset>
+        <div class="group submit-group">
+            <input type="button" value="Soumettre" onclick="soumettreConnexion()">
+        </div>
+    </form>
+</section>
+

@@ -77,6 +77,7 @@ const modifierPanierValidation = {
  * Ajoute un nouveau client. S'utilise avec une requête de type POST.
  * Il faut passer dans le corps de la requête une description complète sous forme de JSON.
  */
+
 router.post('/', validate(nouveauClientValidation), gClients.ajouteClient.bind(gClients));
 
 /**

@@ -1,40 +1,10 @@
 <h1 id="para-1" class="centrer">Inscription au Pro-Gramme</h1>
-<section id="menu-gauche">
-    <a href="#para-1">Premier paragraphe</a>
-    <a href="#para-2">Second paragraphe</a>
-    <a href="#para-3">Troisième paragraphe</a>
-</section>
 <section id="section-inscription">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam at consectetur consequuntur doloremque eligendi et illum iusto maxime necessitatibus odit perspiciatis porro, temporibus tenetur voluptas voluptatem voluptatum. Libero, officia!</p>
-    <table id="table-inscription">
-        <caption>Types d'abonnement</caption>
-        <tr>
-            <th>Type</th>
-            <th>Prix</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>Basique</td>
-            <td>15$</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut beatae consequatur corporis distinctio doloremque dolorum excepturi!</td>
-        </tr>
-        <tr>
-            <td>Premium</td>
-            <td>50$</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut beatae consequatur corporis distinctio doloremque dolorum excepturi!</td>
-        </tr>
-        <tr>
-            <td>Entraîneur</td>
-            <td rowspan="2">75$</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut beatae consequatur corporis distinctio doloremque dolorum excepturi!</td>
-        </tr>
-        <tr>
-            <td>Athlète</td>
-            <!--<td>75$</td>-->
-            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut beatae consequatur corporis distinctio doloremque dolorum excepturi!</td>
-        </tr>
-    </table>
-    <form method="post" action="confirmation.html">
+    <div class="alert" style='display:none' id="error-alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <p id="msg-erreur">Erreur</p>
+    </div>
+    <form>
         <fieldset id="#renseignement-auth">
             <legend>Renseignements d'authentification</legend>
             <div class="group">
@@ -46,6 +16,18 @@
                 <input type="text" name="nom" id="nom" required/>
             </div>
             <div class="group">
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" required/>
+            </div>
+            <div class="group">
+                <label for="adresse">Adresse</label>
+                <input type="text" name="adresse" id="adresse" required/>
+            </div>
+            <div class="group">
+                <label for="pays">Pays</label>
+                <input type="text" name="pays" id="pays" required/>
+            </div>
+            <div class="group">
                 <label for="courriel">Adresse courriel</label>
                 <input type="email" name="courriel" id="courriel" required/>
             </div>
@@ -54,19 +36,8 @@
                 <input type="password" name="mot-de-passe" id="mot-de-passe" required/>
             </div>
         </fieldset>
-        <fieldset>
-            <legend>Renseignements d'inscription</legend>
-            <div class="group">
-                <label for="type-abonnement">Type d'abonnement</label>
-                <select name="type-abonnement" id="type-abonnement">
-                    <option value="1">Basique</option>
-                    <option value="2">Premium</option>
-                    <option value="3">Entraîneur</option>
-                </select>
-            </div>
-        </fieldset>
         <div class="group submit-group">
-            <input type="submit" value="Soumettre" onclick="soumettreInscr()">
+            <input type="button" value="Soumettre" onclick="soumettreInscr()">
         </div>
     </form>
 </section>

@@ -9,7 +9,7 @@
         "courriel": "aaa@bbb.com",
         "mdp": "$2b$08$CEfAuisfWI/driqC4REyfOo/y8RG0g1dw7ngClRLBk1QANEs.U53u",
         "panier": {
-            "valeur": 191.16,
+            "valeur": 242.91,
             "items": [
                 {
                     "id": 0,
@@ -17,7 +17,7 @@
                     "nomProduit": "Tomate",
                     "descriptionProduit": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
                     "prix": 24.76,
-                    "quantite": 3
+                    "quantite": 5
                 },
                 {
                     "id": 1,
@@ -41,7 +41,7 @@
                     "nomProduit": "concombre",
                     "descriptionProduit": "pas un jouet",
                     "prix": 2.23,
-                    "quantite": 5
+                    "quantite": 6
                 },
                 {
                     "id": 4,
@@ -82,6 +82,51 @@
         "pays": "Canada",
         "courriel": "qwer@tyu.com",
         "mdp": "$2b$08$SYOkCCz.wRs49Pv89.ohP.e.uoiQGcya7y5Vw9bRCAqmGtyoP6hi2",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 3,
+        "prenom": "Andy",
+        "nom": "Gautier",
+        "age": 2,
+        "adresse": "1859 Rue de Montbert",
+        "pays": "awd",
+        "courriel": "andy.gautier@outlook.com",
+        "mdp": "$2b$08$EnCnRMyVXhnla7VS15ZNXuj1Zg82b/WD5GBwDaznB9n08r46c4Uxq",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 4,
+        "prenom": "Andy",
+        "nom": "Gautier",
+        "age": 231,
+        "adresse": "31 asd a",
+        "pays": "asd",
+        "courriel": "asdas@outlook.com",
+        "mdp": "$2b$08$xBtTJwUPdjtbTo1gFV2m3O1AumtvtCS0S.Jf/g2z2JXyOovWxeR12",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 5,
+        "prenom": "Andy",
+        "nom": "Gautier",
+        "age": 12,
+        "adresse": "1859 Rue de Montbert",
+        "pays": "ass",
+        "courriel": "aaa@aaa.ca",
+        "mdp": "$2b$08$gSPCYUrBBXZNFYwwpxvQo.xB.GxKwlgdEPWt.aMOadJC/vmtedsUC",
         "panier": {
             "valeur": 0,
             "items": []
