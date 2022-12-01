@@ -162,23 +162,6 @@ nav{
     width: 30px;
 }
 
-/*.profile .btn-profile
-{
-    border: 0;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    background: #9d9c9c;
-    position: absolute;
-    right: 50px;
-    margin-top: 50px;
-}*/
-/*
-.btn-profile:hover .sous-menu {
-    display: block;
-}*/
-
 .profile .btn-profile img
 {
     position: absolute;
@@ -316,6 +299,7 @@ nav{
 #texte-acceuil, #section-inscription, #section-pdv{
     width: 66%;
     margin-left: 34%;
+    color: white;
 }
 
 #menu-gauche{
