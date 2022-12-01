@@ -81,11 +81,12 @@ Reset
   ======================
   */
   .title__container {
-    background-color: orange;
+    background-color: blueviolet;
+    border-radius: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 6rem;
+    margin: 4rem auto 6rem;
     padding: 2rem 0;
   }
   
@@ -618,15 +619,15 @@ Reset
   
   
   td input {
-    width: 5rem;
-    height: 4rem;
+    width: 2rem;
+    height: 2rem;
     padding: 0.5rem;
     border-bottom-color: var(--orange);
   }
   
   td a {
     color: var(--orange);
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   
   td img {
@@ -868,10 +869,10 @@ Reset
     text-align: center;
     padding: 0.5rem;
     color: #fff;
-    background-color: var(--pricipal);
+    background-color:gray;
     font-family: Roboto;
-    font-weight: 500;
-    font-size: 22px;
+    font-weight: 200;
+    font-size: 15px;
   }
   
   td {
@@ -898,24 +899,35 @@ Reset
   }
   
   .total-price {
+    color:#59b210;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    margin-top: 2rem;
+    top: 140px;
+    right: 88px;
+    position: absolute;
     font-family: Roboto;
+  }
+  #itemTitle{
+    color: white;
   }
   
   .total-price table {
+    color: white;
     border-top: 4px solid var(--pricipal);
     width: 100%;
     max-width: 45rem;
   }
   
   td:last-child {
+    color: white;
+
     text-align: center;
   }
   
   th:last-child {
+    color: white;
+
     text-align: right;
   
   }
@@ -927,6 +939,94 @@ Reset
     padding: 1rem;
     margin-top: 1rem;
   }
+  #men{
+    
+    display:table-cell;
+    height: 420px;
+    width: 130px;
+    top: 80px;
+    right: 3px;
+    right: 2.4em;
+    line-height: 100px;
+    padding: 1.5%;
+    background-color: var(--grey2);
+    color: var(--couleur-menu);
+    text-decoration: none;
+    cursor: pointer;
+    
+    position: absolute;
+ 
+}
+
+
+#resum{
+ color: white;
+ margin-top: -4rem;
+ font-family:'Times New Roman', Times, serif;
+ font-weight: bold;	
+ font-size: 22px;
+
+
+}
+
+#prixTo{
+  color: white;
+  margin-top: -6rem;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 15px;
+
+ }
+
+ #TPS{
+  color: white;
+  margin-top: -6rem;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 15px;
+
+ }
+
+ #TVQ{
+  color: white;
+  margin-top: -6rem;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 15px;
+
+ }
+
+ #order{
+
+  display: inline-block;
+  background: var(--orange);
+  width: 120px;
+  color: var(--white);
+  padding: 8px 30px;
+  margin: 30px -15px;
+  font-weight: bold;	
+font-size: 10px;
+  transition: background 0.5s;
+  
+ }
+
+ #btn_sup{
+  margin-top: 4rem;
+  position: absolute;
+ }
+
+
+
+  #supprimer {
+    
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    margin-right: 1.5rem;
+    background: var(--orange);
+    color: white;
+    cursor: pointer;
+  
+  }
+  
   
   @media only screen and (max-width: 567px) {
     .cart-info p {

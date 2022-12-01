@@ -1,13 +1,12 @@
 
 
-//Load Products
 window.addEventListener("DOMContentLoaded", async () => {
+
     const products = await getProducts();
 
     let acheterBtn = document.querySelectorAll(".product__btn");
 
     if (acheterBtn) {
-        // console.log(acheterBtn);
         Array.from(acheterBtn).forEach(btn => {
             btn.addEventListener('click', async e => {
                 const target = e.target;
@@ -58,28 +57,28 @@ window.addEventListener("DOMContentLoaded", async () => {
 function onLoadcartNumbers() {
     let productNumbers = localStorage.getItem('cartNumbers');
 
+
     if (productNumbers) {
         document.querySelector('.panier span').textContent = productNumbers;
-        console.log(productNumbers)
+        console.log(productNumbers);
     }
 }
 // quantite de l'icone du panier
 function cartNumbers(product) {
+
 
     let productNumbers = localStorage.getItem('cartNumbers');
     productNumbers = parseInt(productNumbers);
 
     if (productNumbers) {
         localStorage.setItem('cartNumbers', productNumbers + 1);
-        document.querySelector('.panier span').textContent = productNumbers + 1;
+      //  document.querySelector('.panier span').textContent = productNumbers + 1;
     } else {
         localStorage.setItem('cartNumbers', 1);
-        document.querySelector('.panier span').textContent = 1;
+       // document.querySelector('.panier span').textContent = 1;
 
     }
     setItems(product);
-
-
 }
 
 function setItems(product) {
@@ -111,11 +110,13 @@ function setItems(product) {
 
     localStorage.setItem("productsIncart", JSON.stringify
     (cartItems));
+    console.log("vrvr")
 }
 
 
 
 function totalCost(product) {
+
     //console.log("le prix du prod est ", product.price);
     let cartCost = localStorage.getItem("totalCost");
 
@@ -133,8 +134,11 @@ function totalCost(product) {
 
 
 function displayCart() {
+
     let cartItems = localStorage.getItem("productsIncart");
     cartItems = JSON.parse(cartItems);
+
+    console.log(cartItems)
 
 
     let productContainer = document.querySelector
@@ -156,19 +160,19 @@ function displayCart() {
                     <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     
                     </a><img src= ${item.image} style = "position: center">
+
                     <div>
-                       <a><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> <p>${item.title}</p>
-                        
-                        <div id="btn_sup" style="color: crimson;" data-supp="${item.id}">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suprimer</div>
-                        
-                    </div>
+                    <a><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> <p id = "itemTitle">${item.title}</p>
+                     
+                     <div id="btn_sup" style="color: crimson;" data-supp="${item.id}">
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suprimer</div>
+                     
+                 </div>
                 </div>
             </td>
             
-            <td class="quantity"><input type="number" value=${item.incart} min="1" /></td>
             <td class="total">${item.price * item.incart}</td>
             </tr>`
 

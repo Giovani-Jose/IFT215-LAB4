@@ -55,7 +55,7 @@ const displayProductItems = items => {
             <div class="product__price">
                 <h4>$${product.price}</h4>
                
-                    <button type="button" class="product__btn" data-pid="${product.id}">Acheter</button>
+                    <button type="button" class="product__btn" data-pid="${product.id}">Consulter</button>
                
             </div>
             <ul>
