@@ -162,6 +162,83 @@ nav{
     width: 30px;
 }
 
+/*.profile .btn-profile
+{
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: #9d9c9c;
+    position: absolute;
+    right: 50px;
+    margin-top: 50px;
+}*/
+/*
+.btn-profile:hover .sous-menu {
+    display: block;
+}*/
+
+.profile .btn-profile img
+{
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 30px;
+}
+.profile {
+    float: left;
+    overflow: hidden;
+}
+
+.profile .btn-profile {
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: #9d9c9c;
+    position: absolute;
+    right: 50px;
+    margin-top: 50px;
+}
+
+.profile:hover .btn-profile {
+    background-color: var(--fond-menu-inverse);
+    color: var(--couleur-menu-inverse);
+}
+
+.sous-menu2 {
+    display: none;
+    position: absolute;
+    right: 50px;
+    margin-top: 90px;
+    background-color: var(--fond-menu);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.sous-menu2 a {
+    float: none;
+    color: var(--couleur-menu);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.sous-menu2 a:hover {
+    background-color: var(--fond-menu-inverse);
+    color: var(--couleur-menu-inverse);
+}
+
+.profile:hover .sous-menu2 {
+    display: block;
+}
+
 .barre-menu {
     overflow: hidden;
     display: flex;
