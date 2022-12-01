@@ -1,119 +1,236 @@
 [
     {
         "id": 0,
-        "serial": "we23545",
-        "nom": "Banane",
-        "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
-        "prix": 24.76,
-        "qte_inventaire": 162,
+        "serial": "PR98122",
+        "nom": "Proteine IsoSplash saveur fraise-Banane",
+        "description": "Proteine IsoSplash saveur fraise-Banane ",
+        "prix": 24.11,
+        "qte_inventaire": 204,
         "categorie": {
-            "id": 1,
-            "nom": "Prunier",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+            "id": 2,
+            "nom": "IsoSplash ",
+            "description": "Proteine qui utilise un système d'arôme exclusif "
         }
     },
     {
         "id": 1,
-        "serial": "we23545",
-        "nom": "Tomate",
-        "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
-        "prix": 24.76,
-        "qte_inventaire": 36,
+        "serial": "PR98128",
+        "nom": "Proteine PureEAA saveur bomboms blues",
+        "description": "Proteine PureEAA saveur bomboms blues",
+        "prix": 37.84,
+        "qte_inventaire": 75,
         "categorie": {
-            "id": 2,
-            "nom": "Banane",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+            "id": 4,
+            "nom": "PureEAA",
+            "description": "Proteines à bases d'acides aminés, éléments constitutifs des protéines des animaux "
         }
     },
     {
         "id": 2,
-        "serial": "sdfds",
-        "nom": "concombre",
-        "description": "pas un jouet",
-        "prix": 2.23,
-        "qte_inventaire": 43,
+        "serial": "PR98122",
+        "nom": "Proteine IsoSplash saveur fraise-Banane",
+        "description": "Proteine IsoSplash saveur fraise-Banane ",
+        "prix": 24.11,
+        "qte_inventaire": 204,
         "categorie": {
-            "id": 1,
-            "nom": "Prunier",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+            "id": 2,
+            "nom": "IsoSplash ",
+            "description": "Proteine qui utilise un système d'arôme exclusif "
+        }
+    },
+    {
+        "id": 3,
+        "serial": "PR98123",
+        "nom": "Proteine VeganSmart saveur Cocobanane",
+        "description": "Proteine VeganSmart saveur Cocobanane,Mélange végétalien de protéines intelligentes (isolat de protéines de pois, protéines de riz brun, protéines de citrouille)",
+        "prix": 11.99,
+        "qte_inventaire": 48,
+        "categorie": {
+            "id": 3,
+            "nom": "VeganSmart",
+            "description": "Mélange végétalien de protéines intelligentes (isolat de protéines de pois, protéines de riz brun et protéines de citrouille)"
         }
     },
     {
         "id": 4,
-        "serial": "we23545",
-        "nom": "Banane",
-        "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
-        "prix": 24.76,
-        "qte_inventaire": 160,
+        "serial": "PR98124",
+        "nom": "Proteine IsoSplash saveur Fruits Rouges",
+        "description": "Proteine IsoSplash saveur Fruits Rouges,Proteine qui utilise un système d'arôme exclusif",
+        "prix": 24.11,
+        "qte_inventaire": 111,
         "categorie": {
-            "id": 1,
-            "nom": "Prunier",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+            "id": 2,
+            "nom": "IsoSplash ",
+            "description": "Proteine qui utilise un système d'arôme exclusif "
         }
     },
     {
         "id": 5,
-        "serial": "we23545",
-        "nom": "Tomate",
-        "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
-        "prix": 24.76,
-        "qte_inventaire": 40,
+        "serial": "PR98125",
+        "nom": "Proteine Whey saveur latté Matcha",
+        "description": "Proteine Whey saveur latté Matcha",
+        "prix": 25.11,
+        "qte_inventaire": 220,
         "categorie": {
-            "id": 2,
-            "nom": "Banane",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+            "id": 5,
+            "nom": "Whey",
+            "description": "Concentré de protéines de lactosérum obtenu à partir d'un procédé de microfiltration à flux croisés"
         }
     },
     {
         "id": 6,
-        "serial": "sdfds",
-        "nom": "concombre",
-        "description": "pas un jouet",
-        "prix": 2.23,
-        "qte_inventaire": 45,
+        "serial": "PR98126",
+        "nom": "Proteine IsoSplash saveur Pina Colada",
+        "description": "Une proteine saveur pina colada ",
+        "prix": 24.11,
+        "qte_inventaire": 164,
         "categorie": {
-            "id": 1,
-            "nom": "Prunier",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+            "id": 5,
+            "nom": "Whey",
+            "description": "Concentré de protéines de lactosérum obtenu à partir d'un procédé de microfiltration à flux croisés"
         }
     },
     {
         "id": 7,
-        "serial": "we23545",
-        "nom": "Banane",
-        "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
-        "prix": 24.76,
-        "qte_inventaire": 162,
+        "serial": "PR98127",
+        "nom": "Proteine VeganSmart saveur Chocolat",
+        "description": "Proteine VeganSmart saveur Cocobanane,Mélange végétalien de protéines intelligentes (isolat de protéines de pois, protéines de riz brun, protéines de citrouille)",
+        "prix": 11.99,
+        "qte_inventaire": 78,
         "categorie": {
-            "id": 1,
-            "nom": "Prunier",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+            "id": 3,
+            "nom": "VeganSmart",
+            "description": "Mélange végétalien de protéines intelligentes (isolat de protéines de pois, protéines de riz brun et protéines de citrouille)"
         }
     },
     {
         "id": 8,
-        "serial": "we23545",
-        "nom": "Tomate",
-        "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
-        "prix": 24.76,
-        "qte_inventaire": 37,
+        "serial": "PR98128",
+        "nom": "Proteine PureEAA saveur bomboms blues",
+        "description": "Proteine PureEAA saveur bomboms blues",
+        "prix": 37.84,
+        "qte_inventaire": 75,
         "categorie": {
-            "id": 2,
-            "nom": "Banane",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+            "id": 4,
+            "nom": "PureEAA",
+            "description": "Proteines à bases d'acides aminés, éléments constitutifs des protéines des animaux "
         }
     },
     {
         "id": 9,
-        "serial": "sdfds",
-        "nom": "concombre",
-        "description": "pas un jouet",
-        "prix": 2.23,
-        "qte_inventaire": 7,
+        "serial": "PR98129",
+        "nom": "Proteine IsoWhey Saveur Chocolat",
+        "description": "Proteine IsoWhey Saveur Chocolat",
+        "prix": 25.11,
+        "qte_inventaire": 86,
         "categorie": {
-            "id": 1,
-            "nom": "Prunier",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+            "id": 5,
+            "nom": "Whey",
+            "description": "Concentré de protéines de lactosérum obtenu à partir d'un procédé de microfiltration à flux croisés"
+        }
+    },
+    {
+        "id": 10,
+        "serial": "PR98110",
+        "nom": "Proteine IsoSplash saveur Banana Pop",
+        "description": "Proteine IsoSplash saveur Banana Pop ",
+        "prix": 43.44,
+        "qte_inventaire": 34,
+        "categorie": {
+            "id": 2,
+            "nom": "IsoSplash ",
+            "description": "Proteine qui utilise un système d'arôme exclusif "
+        }
+    },
+    {
+        "id": 11,
+        "serial": "PR98111",
+        "nom": "Proteine PureEAA saveur bombons de melon",
+        "description": "Proteine PureEAA saveur bombons de melon",
+        "prix": 37.87,
+        "qte_inventaire": 72,
+        "categorie": {
+            "id": 4,
+            "nom": "PureEAA",
+            "description": "Proteines à bases d'acides aminés, éléments constitutifs des protéines des animaux "
+        }
+    },
+    {
+        "id": 12,
+        "serial": "PR98112",
+        "nom": "Proteine de lactose Whey saveur Churro",
+        "description": "Proteine de lactose Whey saveur Churro",
+        "prix": 25.11,
+        "qte_inventaire": 120,
+        "categorie": {
+            "id": 5,
+            "nom": "Whey",
+            "description": "Concentré de protéines de lactosérum obtenu à partir d'un procédé de microfiltration à flux croisés"
+        }
+    },
+    {
+        "id": 13,
+        "serial": "PR98113",
+        "nom": "Proteine IsoWhey Saveur Chocolat",
+        "description": "Proteine IsoWhey Saveur Chocolat",
+        "prix": 25.11,
+        "qte_inventaire": 86,
+        "categorie": {
+            "id": 5,
+            "nom": "Whey",
+            "description": "Concentré de protéines de lactosérum obtenu à partir d'un procédé de microfiltration à flux croisés"
+        }
+    },
+    {
+        "id": 14,
+        "serial": "PR98114",
+        "nom": "Proteine de lactose Whey saveur menthe",
+        "description": "Proteine de lactose Whey saveur menthe",
+        "prix": 27.11,
+        "qte_inventaire": 117,
+        "categorie": {
+            "id": 5,
+            "nom": "Whey",
+            "description": "Concentré de protéines de lactosérum obtenu à partir d'un procédé de microfiltration à flux croisés"
+        }
+    },
+    {
+        "id": 15,
+        "serial": "PR98115",
+        "nom": "Proteine PureEAA saveur cerises",
+        "description": "Proteine PureEAA saveur bombons de cerises",
+        "prix": 37.87,
+        "qte_inventaire": 122,
+        "categorie": {
+            "id": 4,
+            "nom": "PureEAA",
+            "description": "Proteines à bases d'acides aminés, éléments constitutifs des protéines des animaux "
+        }
+    },
+    {
+        "id": 16,
+        "serial": "PR98116",
+        "nom": "Proteine IsoSplash saveur Clementine",
+        "description": "Proteine IsoSplash saveur Clementine",
+        "prix": 43.44,
+        "qte_inventaire": 88,
+        "categorie": {
+            "id": 2,
+            "nom": "IsoSplash ",
+            "description": "Proteine qui utilise un système d'arôme exclusif "
+        }
+    },
+    {
+        "id": 17,
+        "serial": "PR98114",
+        "nom": "Proteine de lactose Whey saveur Vainille",
+        "description": "Proteine de lactose Whey saveur Vainille",
+        "prix": 27.11,
+        "qte_inventaire": 77,
+        "categorie": {
+            "id": 5,
+            "nom": "Whey",
+            "description": "Concentré de protéines de lactosérum obtenu à partir d'un procédé de microfiltration à flux croisés"
         }
     }
 ]
