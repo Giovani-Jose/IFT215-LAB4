@@ -4,38 +4,75 @@
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         <p id="msg-erreur">Erreur</p>
     </div>
-    <form>
-        <fieldset id="#renseignement-auth">
+    <form class="needs-validation" novalidate>
             <legend>Renseignements d'authentification</legend>
-            <div class="group">
-                <label for="prenom">Prénom</label>
-                <input type="text" name="prenom" id="prenom" required/>
+            <div class="form-row">
+                <div class="col-md-3 mb-2">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" class="form-control" id="prenom" placeholder="Prénom" onfocusout="validationPrenom()" oninput="validationPrenom()" required>
+                    <div class="invalid-feedback" id="prenom-msg">
+                        Invalide <!--changé par la méthode de validation-->
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-2">
+                    <label for="nom">Nom</label>
+                    <input type="text" class="form-control" id="nom" placeholder="Nom" onfocusout="validationNom()" oninput="validationNom()" required>
+                    <div class="invalid-feedback" id="nom-msg">
+                        Invalide! <!--changé par la méthode de validation-->
+                    </div>
+                </div>
             </div>
-            <div class="group">
-                <label for="nom">Nom</label>
-                <input type="text" name="nom" id="nom" required/>
-            </div>
-            <div class="group">
-                <label for="age">Age</label>
-                <input type="number" name="age" id="age" required/>
-            </div>
-            <div class="group">
+        <div class="form-row">
+            <div class="col-md-3 mb-2">
                 <label for="adresse">Adresse</label>
-                <input type="text" name="adresse" id="adresse" required/>
+                <input type="text" class="form-control" id="adresse" placeholder="Adresse" onfocusout="validationAdresse()" oninput="validationAdresse()" required>
+                <div class="invalid-feedback">
+                    Ne peut pas être vide.
+                </div>
             </div>
-            <div class="group">
+
+            <div class="col-md-3 mb-2">
                 <label for="pays">Pays</label>
-                <input type="text" name="pays" id="pays" required/>
+                <input type="select" class="form-control" id="pays" placeholder="Pays" onfocusout="validationPays()" oninput="validationPays()" required>
+                <div class="invalid-feedback">
+                    Ne peut pas être vide.
+                </div>
             </div>
-            <div class="group">
-                <label for="courriel">Adresse courriel</label>
-                <input type="email" name="courriel" id="courriel" required/>
+        </div>
+            <div class="form-row">
+                <div class="col-md-3 mb-2">
+                    <label for="age">Âge</label>
+                    <input type="number" class="form-control" id="age" onfocusout="validationAge()" oninput="validationAge()" required>
+                    <div class="invalid-feedback">
+                        Ne peut pas être vide.
+                    </div>
+                </div>
             </div>
-            <div class="group">
+
+        <div class="form-row">
+            <div class="col-md-3 mb-2">
+                <label for="courriel">Courriel</label>
+                <input type="text" class="form-control" id="courriel" placeholder="Courriel" oninput="validationCourriel()" onfocusout="validationCourriel()" required>
+                <div class="invalid-feedback" id="courriel-msg">
+                    Invalide! <!--changé par la méthode de validation-->
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-2">
                 <label for="mot-de-passe">Mot de passe</label>
-                <input type="password" name="mot-de-passe" id="mot-de-passe" required/>
+                <input type="text" class="form-control" id="mot-de-passe" placeholder="Mot de passe" required>
+                <div class="invalid-feedback">
+                    Invalide!
+                </div>
             </div>
-        </fieldset>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </div>
         <div class="group submit-group">
             <input type="button" value="Soumettre" onclick="soumettreInscr()">
         </div>
