@@ -309,6 +309,15 @@ nav{
     color: white;
 }
 
+#section-connexion{
+   margin-left: 37%;
+    width: 400px;
+    padding: 10px 0 20px 50px;
+    color: white;
+    border: solid white;
+
+}
+
 #menu-gauche{
     position: absolute;
     width:30%;
@@ -342,13 +351,9 @@ nav{
     width: 300px;
 }
 
-.submit-group input[type=submit]{
-    width: 150px
-}
-.submit-group {
-    max-width: 500px;
+.btn-primary{
+    margin-top: 15px;
     text-align: right;
-    padding: 14px 0px 14px 28px;
 }
 
 
@@ -423,7 +428,13 @@ nav{
     color: white;
     margin-bottom: 15px;
 }
-
+.error-alert2 {
+    width: 300px;
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
 .success-alert {
     width: 700px;
     padding: 20px;
@@ -433,6 +444,10 @@ nav{
     font-size: large;
 }
 
+.success-alert a {
+    color: white;
+    text-decoration: none;
+}
 
 .closebtn {
     margin-left: 15px;
@@ -445,7 +460,7 @@ nav{
     transition: 0.3s;
 }
 
-/* When moving the mouse over the close button */
 .closebtn:hover {
     color: black;
 }
+

@@ -1,4 +1,7 @@
 function soumettreConnexion(){
+    /*Fermer les messages existants*/
+    document.getElementById("error-alert").setAttribute("style","display:none");
+
     let courriel = document.getElementById("courriel").value;
     let mdp = document.getElementById("mot-de-passe").value;
 
@@ -10,9 +13,14 @@ function soumettreConnexion(){
         success: function(result) {
             console.log("success");
             console.log(result);
+            //INFO CONNEXION
+            TOKEN_CLIENT = result.token;
+            IDCLIENT = result.idClient;
+
+            alert("Connexion réussie! Retour à l'accueil.")
+            window.location.replace("#/")
         },
         error: function(result) {
-            document.getElementById("msg-erreur").innerHTML = "Erreur :" + '\n' + result.responseText;
             document.getElementById("error-alert").setAttribute("style","display:block");
 
             console.log(result.responseText);

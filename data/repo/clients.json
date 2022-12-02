@@ -162,5 +162,95 @@
             "items": []
         },
         "historique": []
+    },
+    {
+        "id": 8,
+        "prenom": "ASd",
+        "nom": "ASD",
+        "age": 52,
+        "adresse": "asd",
+        "pays": "ASDasd",
+        "courriel": "asdad2s@sad.ca",
+        "mdp": "$2b$08$7by2uT42DfrZA4MQ3q8XIOf8kVHlo3fRaQdGa2dbsvfye.XPTLY92",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 9,
+        "prenom": "ASd",
+        "nom": "ASD",
+        "age": 52,
+        "adresse": "asd",
+        "pays": "ASDasd",
+        "courriel": "asdad2sw@sad.ca",
+        "mdp": "$2b$08$Juud92r913IsiZJuZfB71ORqtKIuHSffh4cfebWvo1lSSF7O8N1Cy",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 10,
+        "prenom": "Andy",
+        "nom": "Gautier",
+        "age": 2,
+        "adresse": "1859 Rue de Montbert",
+        "pays": "sad",
+        "courriel": "andy2.gautier@outlook.com",
+        "mdp": "$2b$08$yhzVeikaCJ9XB0RV8cyY8eL7Gr7mHXUw8Y3hDZNVMVF0dEzsSPge6",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 11,
+        "prenom": "Andy",
+        "nom": "Gautier",
+        "age": 22,
+        "adresse": "1859 Rue de Montbert",
+        "pays": "Asds",
+        "courriel": "andy3.gautier@outlook.com",
+        "mdp": "$2b$08$PAQmQACBA040PpYKmDbP8.88Vz8KNIQ9kxzbgGCKQud1LQ08PGici",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 12,
+        "prenom": "Andy",
+        "nom": "Gautier",
+        "age": 22,
+        "adresse": "1859 Rue de Montbert",
+        "pays": "Asds",
+        "courriel": "andy4.gautier@outlook.com",
+        "mdp": "$2b$08$1H5xae5k5VdyhLM.bT.r5Okh9WVHAOuoA0tY.QcEta01KaYhI5ZKO",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 13,
+        "prenom": "Andy",
+        "nom": "Gautier",
+        "age": 1,
+        "adresse": "1859 Rue de Montbert",
+        "pays": "ass",
+        "courriel": "andy.gautie4r@outlook.com",
+        "mdp": "$2b$08$AqQ/q56.Q6A2w2/hWpeUzO1Ci0Q6Ybmvv3VGh4tO3tPhwUdkWwvWS",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
     }
 ]
