@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
@@ -26,9 +20,6 @@
 
 
     <title>Panier</title>
-</head>
-
-<body>
 <!--HEADER-->
 <header class="header" id="header">
     <!--Navigation-->
@@ -36,25 +27,27 @@
 <div class="container cart">
 <div class="">
     <table height="20%" width="20%"
-    bordercolor="orange"  cellpadding ="8" class="center">
+      cellpadding ="0" cellspacing ="0"  class="center">
         <thead>
         <tr>
             <th class="product-title">Produits</th>
             <th class="total">Sous total</th>
+            <th class="Resum">Résumé</th>
         </tr>
         </thead>
+        <td ></td>
+        <td ></td>
         <tbody id="cart_product">
         <tr>
         <td class="product-title">
 
-            <div class="cart-info" >
-
-                </div>
-
+            <div class="cart-info" ></div>
+  
         </td>
+
+        
         </tr>
         </tbody>
-
     </table>
 
 <!--    <div class =  "product_header">-->
@@ -67,24 +60,9 @@
 <!--    </div>-->
 
 
-<section id="men">
-
-  <div>
-    <p id = "resum">Résumé</p>
-    <p id = "prixTo">Prix total</p>
-    <p id = "TPS">TPS</p>
-    <p id = "TVQ">TVQ</p>
-  </div>
-
-  <div>
-    <button type="button" class="ordre__btn" id="order">Passer la commande</button>
-  </div>
-  
-</section>
     <div>
         <span class="total-price"> total</span>
     </div>
-    <button id="supprimer"> Supprimer tout</button>
 </div>
 
 </div>
@@ -110,7 +88,3 @@
 <script type="application/javascript">
     displayCart()
 </script>
-
-</body>
-
-</html>

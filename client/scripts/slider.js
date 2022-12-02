@@ -31,20 +31,30 @@ Latest Products
 =============
  */
 
-if(slider2) {
-    new Glide(slider2, {
-        type: 'carousel',
-        startAt: 0,
-        haverpause: true,
-        perView: 4,
-        animationDuration: 800,
-        animationTimingFunc: "ease-in-out",
-        breakpoints: {
-            1200: {perView: 3},
-            768: {perView: 2},
-        },
-    }).mount();
+function chargerproduits()
+{
+    const slider2 = document.querySelector('#glide_2');
+
+    if(slider2) {
+
+        new Glide(slider2, {
+            type: 'carousel',
+            startAt: 0,
+            haverpause: true,
+            perView: 4,
+            animationDuration: 800,
+            animationTimingFunc: "ease-in-out",
+            breakpoints: {
+                1200: {perView: 3},
+                768: {perView: 2},
+            },
+        }).mount();
+    }
+
+    //window["afficherProduits"]();
+
 }
+
 
 
 

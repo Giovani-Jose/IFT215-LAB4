@@ -18,15 +18,25 @@ const getProducts = async () => {
 };
 
 //Load Products
-window.addEventListener("DOMContentLoaded", async () => {
+
+
+async function charger()
+{
     const products = await getProducts();
-    displayProductItems(products);
-});
+    const categoryCenter = document.querySelector('.category__center');
+    console.log("oooe")
+    console.log(categoryCenter)
+
+    displayProductItems(products,categoryCenter);
+}
+ 
 
 //Display Products
 const categoryCenter = document.querySelector('.category__center');
 
-const displayProductItems = items => {
+
+const displayProductItems = (items,categoryCenter) => {
+
     let displayProduct = items.map(product =>
         `<div class="product category__product">
             <input type=hidden value="${product.id}" id="product_id"/>
@@ -67,6 +77,7 @@ const displayProductItems = items => {
 
     displayProduct = displayProduct.join('');
     if (categoryCenter) {
+        console.log("dfr")
         categoryCenter.innerHTML = displayProduct;
     }
 

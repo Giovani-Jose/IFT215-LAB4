@@ -6,6 +6,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
     let acheterBtn = document.querySelectorAll(".product__btn");
 
+
     if (acheterBtn) {
         Array.from(acheterBtn).forEach(btn => {
             btn.addEventListener('click', async e => {
@@ -55,12 +56,12 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 
 function onLoadcartNumbers() {
+
     let productNumbers = localStorage.getItem('cartNumbers');
 
 
     if (productNumbers) {
         document.querySelector('.panier span').textContent = productNumbers;
-        console.log(productNumbers);
     }
 }
 // quantite de l'icone du panier
@@ -110,7 +111,6 @@ function setItems(product) {
 
     localStorage.setItem("productsIncart", JSON.stringify
     (cartItems));
-    console.log("vrvr")
 }
 
 
@@ -133,16 +133,19 @@ function totalCost(product) {
 
 
 
-function displayCart() {
+function chargerpanier() {
 
     let cartItems = localStorage.getItem("productsIncart");
     cartItems = JSON.parse(cartItems);
 
-    console.log(cartItems)
-
 
     let productContainer = document.querySelector
     ("#cart_product");
+
+       let ResumTable = document.querySelector
+         ("#Resum");
+
+        // ResumTable.innerHTML = '<td class="Resum">salut</td>'
 
     let totalPriceElement = document.querySelector
     (".total-price");
@@ -153,6 +156,7 @@ function displayCart() {
         let total = 0;
         let cartItemsHtml = Object.values(cartItems).map( item => {
             total += item.price * item.incart
+            
             return  `<tr class =  "product_item">
             <td class="product-title">
             
@@ -164,25 +168,49 @@ function displayCart() {
                     <div>
                     <a><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> <p id = "itemTitle">${item.title}</p>
-                     
-                     <div id="btn_sup" style="color: crimson;" data-supp="${item.id}">
-                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suprimer</div>
-                     
+                     <button id="btn_sup" style="color: crimson;" data-supp="${item.id}"  onclick="add_item(${item.id})">Suprimer</button>
+                                          
                  </div>
                 </div>
             </td>
             
             <td class="total">${item.price * item.incart}</td>
             </tr>`
+            
+        
 
         });
         // console.log(cartItemsHtml);
+
+
+
+
          productContainer.innerHTML = cartItemsHtml.join('');
         totalPriceElement.innerHTML = '$' + total
-
-
     }
 }
 
+function supprimer(id)
+{
+   console.log("id")
+}
+
+async function add_item(item_id)
+{
+    let cartItems = localStorage.getItem("productsIncart");
+    let jsonItems = JSON.parse(cartItems)
+    delete jsonItems[item_id];
+    localStorage.setItem("productsIncart", JSON.stringify(jsonItems))
+    chargerpanier();
+}
+
+async function del()
+{
+    let cartItems = localStorage.getItem("productsIncart");
+    let elm = delete jsonItems["id"];
+    localStorage.setItem("productsIncart", JSON.stringify(elm))
+    chargerpanier();
+
+
+}
 onLoadcartNumbers();
