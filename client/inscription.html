@@ -1,8 +1,12 @@
 <h1 id="para-1" class="centrer">Inscription au Pro-Gramme</h1>
 <section id="section-inscription">
-    <div class="alert" style='display:none' id="error-alert">
+    <div class="error-alert" style='display:none' id="error-alert">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         <p id="msg-erreur">Erreur</p>
+    </div>
+    <div class="success-alert" style='display:none' id="success-alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <p id="msg-success">Inscription réussie !</p>
     </div>
     <form class="needs-validation" novalidate>
             <legend>Renseignements d'authentification</legend>
@@ -61,7 +65,7 @@
 
             <div class="col-md-3 mb-2">
                 <label for="mot-de-passe">Mot de passe</label>
-                <input type="text" class="form-control" id="mot-de-passe" placeholder="Mot de passe" oninput="validationMdp()" onfocusout="validationMdp()" required>
+                <input type="password" class="form-control" id="mot-de-passe" placeholder="Mot de passe" oninput="validationMdp()" onfocusout="validationMdp()" required>
                 <div class="invalid-feedback" id="mdp-msg">
                     Invalide! <!--changé par la méthode de validation-->
                 </div>

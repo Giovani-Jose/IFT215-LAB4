@@ -415,16 +415,25 @@ nav{
     margin-right: auto;
   }
 
-/* The alert message box */
-.alert {
-    width: 500px;
+
+.error-alert {
+    width: 700px;
     padding: 20px;
     background-color: #f44336; /* Red */
     color: white;
     margin-bottom: 15px;
 }
 
-/* The close button */
+.success-alert {
+    width: 700px;
+    padding: 20px;
+    background-color: #19831a; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    font-size: large;
+}
+
+
 .closebtn {
     margin-left: 15px;
     color: white;

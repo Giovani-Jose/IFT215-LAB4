@@ -132,5 +132,35 @@
             "items": []
         },
         "historique": []
+    },
+    {
+        "id": 6,
+        "prenom": "as",
+        "nom": "adasds",
+        "age": 12,
+        "adresse": "asd",
+        "pays": "as",
+        "courriel": "bbb@bbb.ca",
+        "mdp": "$2b$08$MWpYbJ9JWAPSrSt8j5iAH.CYARTus9F0jcvygHIftODwCbkzyF7Fm",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 7,
+        "prenom": "as",
+        "nom": "asd",
+        "age": 2,
+        "adresse": "asd",
+        "pays": "ads",
+        "courriel": "ccc@ccc.ca",
+        "mdp": "$2b$08$TRYu4FEXRJ/rHB3vfuIUO.FnJ/JYmZalVkQ8G5k9dcSytrjPb0rbe",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
     }
 ]

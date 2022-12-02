@@ -7,17 +7,24 @@ function soumettreInscr(){
     let courriel = document.getElementById("courriel").value;
     let mdp = document.getElementById("mot-de-passe").value;
 
+    /*Fermer les messages existants*/
+    document.getElementById("success-alert").setAttribute("style","display:none");
+    document.getElementById("error-alert").setAttribute("style","display:none");
     $.ajax({
         url: "/clients/",
         method:"POST",
         data: JSON.stringify({"prenom": prenom, "nom": nom, "age":age, "adresse":adresse, "pays": pays, "courriel": courriel, "mdp": mdp}),
         contentType: "application/json",
         success: function(result) {
+            document.getElementById("success-alert").setAttribute("style","display:block");
             console.log("success");
             console.log(result);
         },
         error: function(result) {
-            document.getElementById("msg-erreur").innerHTML = "Erreur :" + '\n' + result.responseText;
+            if (result.responseText != "Il y a déjà un client avec cette adresse")
+                document.getElementById("msg-erreur").innerHTML = "Erreur : veuillez vérifier les champs du formulaire."
+            else
+                document.getElementById("msg-erreur").innerHTML = "Erreur : " + result.responseText;
             document.getElementById("error-alert").setAttribute("style","display:block");
 
             console.log(result.responseText);
