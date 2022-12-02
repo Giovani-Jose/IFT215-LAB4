@@ -41,7 +41,7 @@ function validationPrenom(){
     let regXNombre = new RegExp(/[0-9]/);
     let specialChars = false;
     let nums = false;
-    let vide = true;
+    let vide = false;
     document.getElementById("prenom-msg").innerHTML = "Invalide."
 
     if(regX.test(prenom)){
@@ -85,7 +85,7 @@ function validationNom(){
     let regXNombre = new RegExp(/[0-9]/);
     let specialChars = false;
     let nums = false;
-    let vide = true;
+    let vide = false;
     document.getElementById("nom-msg").innerHTML = "Invalide."
 
     if(regX.test(nom)){
@@ -171,6 +171,87 @@ function validationCourriel() {var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)
     }
 }
 
+function validationMdp(){
+    let mdp = document.getElementById(`mot-de-passe`).value;
+    let regXmin = new RegExp(/[a-z]/g);
+    let regXmaj = new RegExp(/[A-Z]/g);
+    let regXspecial = new RegExp(/[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/);
+    let regXNombre = new RegExp(/[0-9]/);
+    let min = false;
+    let maj =false;
+    let specialChars = false;
+    let nums = false;
+    let vide = false;
+    let long = false;
+    let valide = true;
+    document.getElementById("mdp-msg").innerHTML = "Le mot de passe doit contenir :"
+
+    if (mdp.length >= 8){
+        long = true;
+    }
+    if(regXmin.test(mdp)){
+        min = true;
+    }
+
+    if(regXmaj.test(mdp)){
+        maj = true;
+    }
+
+    if(regXspecial.test(mdp)){
+        specialChars = true
+    }
+
+    if(regXNombre.test(mdp)){
+        nums = true;
+    }
+
+    if(mdp == "" || mdp == null){
+        vide = true;
+    }
+
+    if (!long){
+        setInvalid('mot-de-passe')
+        let message = "Au moins 8 caractères."
+        document.getElementById("mdp-msg").innerHTML += "<br>" + message
+        valide = false;
+    }
+    if (!min){
+        setInvalid('mot-de-passe')
+        let message = "Au moins une minuscule."
+        document.getElementById("mdp-msg").innerHTML += "<br>" + message
+        valide = false;
+    }
+    if (!maj){
+        setInvalid('mot-de-passe')
+        let message = "Au moins une majuscule."
+        document.getElementById("mdp-msg").innerHTML += "<br>" + message
+        valide = false;
+    }
+    if (!specialChars){
+        setInvalid('mot-de-passe')
+        let message = "Au moins un caractère spécial."
+        document.getElementById("mdp-msg").innerHTML += "<br>" + message
+        valide = false;
+    }
+
+    if (!nums) {
+        setInvalid('mot-de-passe')
+        let message = "Au moins un chiffre."
+        document.getElementById("mdp-msg").innerHTML += "<br>" + message
+        valide = false;
+    }
+
+    else if (vide) {
+        setInvalid('mot-de-passe')
+        let message = "Ne peut pas être vide."
+        document.getElementById("mdp-msg").innerHTML = message
+        valide = false;
+    }
+
+    if (valide){
+        setValid('mot-de-passe')
+    }
+}
 function setInvalid(attribute){
     document.getElementById(attribute).setAttribute("class","form-control is-invalid")
 }

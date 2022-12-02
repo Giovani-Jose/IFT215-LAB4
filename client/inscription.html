@@ -61,18 +61,13 @@
 
             <div class="col-md-3 mb-2">
                 <label for="mot-de-passe">Mot de passe</label>
-                <input type="text" class="form-control" id="mot-de-passe" placeholder="Mot de passe" required>
-                <div class="invalid-feedback">
-                    Invalide!
+                <input type="text" class="form-control" id="mot-de-passe" placeholder="Mot de passe" oninput="validationMdp()" onfocusout="validationMdp()" required>
+                <div class="invalid-feedback" id="mdp-msg">
+                    Invalide! <!--changé par la méthode de validation-->
                 </div>
             </div>
         </div>
 
-        <div class="form-group row">
-            <div class="col-sm-10">
-                <button type="submit" class="btn btn-primary">Sign in</button>
-            </div>
-        </div>
         <div class="group submit-group">
             <input type="button" value="Soumettre" onclick="soumettreInscr()">
         </div>
