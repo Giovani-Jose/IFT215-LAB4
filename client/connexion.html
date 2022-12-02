@@ -1,0 +1,45 @@
+<h1 id="para-1" class="centrer">Connexion</h1>
+<section id="section-connexion">
+    <div class="error-alert2" style='display:none' id="error-alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <p id="msg-erreur"> Erreur : Les identifiants sont éronnés.</p>
+    </div>
+    <form class="needs-validation" novalidate>
+        <legend>Authentification</legend>
+
+        <div class="form-group">
+                <label for="courriel">Courriel</label>
+                <input type="text" class="form-control" id="courriel" placeholder="Courriel" required>
+                <div class="invalid-feedback" id="courriel-msg">
+                    Invalide! <!--changé par la méthode de validation-->
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="mot-de-passe">Mot de passe</label>
+                <input type="password" class="form-control" id="mot-de-passe" placeholder="Mot de passe" required>
+                <div class="invalid-feedback" id="mdp-msg">
+                    Invalide! <!--changé par la méthode de validation-->
+                </div>
+            </div>
+
+        <button type="button" class="btn btn-primary" onclick="soumettreConnexion()">Connexion</button>
+    </form>
+    <!--<form>
+        <fieldset id="#renseignement-auth">
+            <legend>Authentification</legend>
+            <div class="form-group">
+                <label for="courriel">Adresse courriel</label>
+                <input class="form-control" type="email" name="courriel" id="courriel" required/>
+            </div>
+            <div class="form-group">
+                <label for="mot-de-passe">Mot de passe</label>
+                <input class="form-control" type="password" name="mot-de-passe" id="mot-de-passe" required/>
+            </div>
+        </fieldset>
+        <div class="group submit-group">
+            <input type="button" value="Soumettre" onclick="soumettreConnexion()">
+        </div>
+    </form>-->
+</section>
+

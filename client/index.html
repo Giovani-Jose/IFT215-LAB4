@@ -7,10 +7,10 @@
     <meta name="keywords" content="Suppléments alimentaires, protéines">
 
     <title>Pro-Gramme</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
           rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-          crossorigin="anonymous">
+          crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style/main.css">
 
@@ -22,6 +22,7 @@
 
     <script src="scripts/main.js"></script>
     <script src="scripts/inscription.js"></script>
+    <script src="scripts/connexion.js"></script>
     <script src="scripts/points_de_vente.js"></script>
     <script src="scripts/navigation.js"></script>
     <script src="scripts/produit.js"></script>
@@ -29,13 +30,38 @@
 </head>
 <body>
 <header id="navigation">
+    <div class="container1">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="titre-logo">
+                    <h1><a href="#/"> Pro-Gramme</a></h1>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <form role="search" class="barre-recherche">
+                    <input type="search" id="query" name="q"
+                           placeholder="Rechercher un produit">
+                    <button type="submit"><img src="images/search.png"></button>
+                </form>
+                <button type="button" class="btn-panier">
+                    <a href="#/panier"><img src="images/panier.png"></a>
+                </button>
+                <div class="profile"><button class="btn-profile"><img src="images/profile.png"></button>
+                    <div class="sous-menu2">
+                        <a href="#/inscription">Inscription</a>
+                        <a href="#/connexion">Connexion</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <nav>
-        <a href="#"><img src="images/logo.png" alt="Logo de Pro-Gramme" /></a><br />
         <div id="menu-principal">
             <div class="barre-menu">
                 <a href="#/" >Accueil</a>
                 <a href="#/inscription">Inscription</a>
-                <a href="produits.html">Produits</a>
+                <a href="#/produits">Produits</a>
                 <div class="deroulant"><button class="btn-deroulant">À propos</button>
                     <div class="sous-menu">
                         <a href="#/points_de_vente">Points de ventes</a>
@@ -49,8 +75,40 @@
 <div id="corps-principal">
 
 </div>
-<footer>
-    Pro-Gramme - Tous droits réservés
+<footer class="custom-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Liens rapides</h5>
+                <ul class="footer-links">
+                    <li><a href="#/inscription">Aide et information</a></li>
+                    <li><a href="#/inscription">F.A.Q.</a></li>
+                    <li><a href="#/inscription">Termes et conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Pro-Gramme</h2>
+            </div>
+
+            <div class="col-md-4">
+                <h6>Nous joindre :</h6>
+                <ul class="footer-info">
+                    <li>(819) 888 9999</li>
+                    <li>programcontact@progra.me</li>
+                    <li>420 rue d'Address, Cityville, QC</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <p class="copyright-text">Pro-Gramme - Tous droits réservés </p>
+            </div>
+        </div>
+    </div>
 </footer>
 </body>
 </html>

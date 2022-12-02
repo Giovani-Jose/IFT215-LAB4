@@ -9,7 +9,7 @@
         "courriel": "aaa@bbb.com",
         "mdp": "$2b$08$CEfAuisfWI/driqC4REyfOo/y8RG0g1dw7ngClRLBk1QANEs.U53u",
         "panier": {
-            "valeur": 191.16,
+            "valeur": 242.91,
             "items": [
                 {
                     "id": 0,
@@ -17,7 +17,7 @@
                     "nomProduit": "Tomate",
                     "descriptionProduit": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
                     "prix": 24.76,
-                    "quantite": 3
+                    "quantite": 5
                 },
                 {
                     "id": 1,
@@ -41,7 +41,7 @@
                     "nomProduit": "concombre",
                     "descriptionProduit": "pas un jouet",
                     "prix": 2.23,
-                    "quantite": 5
+                    "quantite": 6
                 },
                 {
                     "id": 4,
@@ -82,6 +82,171 @@
         "pays": "Canada",
         "courriel": "qwer@tyu.com",
         "mdp": "$2b$08$SYOkCCz.wRs49Pv89.ohP.e.uoiQGcya7y5Vw9bRCAqmGtyoP6hi2",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 3,
+        "prenom": "Andy",
+        "nom": "Gautier",
+        "age": 2,
+        "adresse": "1859 Rue de Montbert",
+        "pays": "awd",
+        "courriel": "andy.gautier@outlook.com",
+        "mdp": "$2b$08$EnCnRMyVXhnla7VS15ZNXuj1Zg82b/WD5GBwDaznB9n08r46c4Uxq",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 4,
+        "prenom": "Andy",
+        "nom": "Gautier",
+        "age": 231,
+        "adresse": "31 asd a",
+        "pays": "asd",
+        "courriel": "asdas@outlook.com",
+        "mdp": "$2b$08$xBtTJwUPdjtbTo1gFV2m3O1AumtvtCS0S.Jf/g2z2JXyOovWxeR12",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 5,
+        "prenom": "Andy",
+        "nom": "Gautier",
+        "age": 12,
+        "adresse": "1859 Rue de Montbert",
+        "pays": "ass",
+        "courriel": "aaa@aaa.ca",
+        "mdp": "$2b$08$gSPCYUrBBXZNFYwwpxvQo.xB.GxKwlgdEPWt.aMOadJC/vmtedsUC",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 6,
+        "prenom": "as",
+        "nom": "adasds",
+        "age": 12,
+        "adresse": "asd",
+        "pays": "as",
+        "courriel": "bbb@bbb.ca",
+        "mdp": "$2b$08$MWpYbJ9JWAPSrSt8j5iAH.CYARTus9F0jcvygHIftODwCbkzyF7Fm",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 7,
+        "prenom": "as",
+        "nom": "asd",
+        "age": 2,
+        "adresse": "asd",
+        "pays": "ads",
+        "courriel": "ccc@ccc.ca",
+        "mdp": "$2b$08$TRYu4FEXRJ/rHB3vfuIUO.FnJ/JYmZalVkQ8G5k9dcSytrjPb0rbe",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 8,
+        "prenom": "ASd",
+        "nom": "ASD",
+        "age": 52,
+        "adresse": "asd",
+        "pays": "ASDasd",
+        "courriel": "asdad2s@sad.ca",
+        "mdp": "$2b$08$7by2uT42DfrZA4MQ3q8XIOf8kVHlo3fRaQdGa2dbsvfye.XPTLY92",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 9,
+        "prenom": "ASd",
+        "nom": "ASD",
+        "age": 52,
+        "adresse": "asd",
+        "pays": "ASDasd",
+        "courriel": "asdad2sw@sad.ca",
+        "mdp": "$2b$08$Juud92r913IsiZJuZfB71ORqtKIuHSffh4cfebWvo1lSSF7O8N1Cy",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 10,
+        "prenom": "Andy",
+        "nom": "Gautier",
+        "age": 2,
+        "adresse": "1859 Rue de Montbert",
+        "pays": "sad",
+        "courriel": "andy2.gautier@outlook.com",
+        "mdp": "$2b$08$yhzVeikaCJ9XB0RV8cyY8eL7Gr7mHXUw8Y3hDZNVMVF0dEzsSPge6",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 11,
+        "prenom": "Andy",
+        "nom": "Gautier",
+        "age": 22,
+        "adresse": "1859 Rue de Montbert",
+        "pays": "Asds",
+        "courriel": "andy3.gautier@outlook.com",
+        "mdp": "$2b$08$PAQmQACBA040PpYKmDbP8.88Vz8KNIQ9kxzbgGCKQud1LQ08PGici",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 12,
+        "prenom": "Andy",
+        "nom": "Gautier",
+        "age": 22,
+        "adresse": "1859 Rue de Montbert",
+        "pays": "Asds",
+        "courriel": "andy4.gautier@outlook.com",
+        "mdp": "$2b$08$1H5xae5k5VdyhLM.bT.r5Okh9WVHAOuoA0tY.QcEta01KaYhI5ZKO",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 13,
+        "prenom": "Andy",
+        "nom": "Gautier",
+        "age": 1,
+        "adresse": "1859 Rue de Montbert",
+        "pays": "ass",
+        "courriel": "andy.gautie4r@outlook.com",
+        "mdp": "$2b$08$AqQ/q56.Q6A2w2/hWpeUzO1Ci0Q6Ybmvv3VGh4tO3tPhwUdkWwvWS",
         "panier": {
             "valeur": 0,
             "items": []
