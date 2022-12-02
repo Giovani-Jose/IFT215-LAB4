@@ -1,15 +1,20 @@
 
 
-window.addEventListener("DOMContentLoaded", async () => {
+/*window.addEventListener("DOMContentLoaded", async () => {
 
     const products = await getProducts();
 
     let acheterBtn = document.querySelectorAll(".product__btn");
 
+   console.log(acheterBtn)
+    
 
-    if (acheterBtn) {
+
+    if (acheterBtn && acheterBtn.length==0) {
         Array.from(acheterBtn).forEach(btn => {
+
             btn.addEventListener('click', async e => {
+                console.log("fr")
                 const target = e.target;
                 if (!target) return;
                 // console.log(e.target);
@@ -21,14 +26,13 @@ window.addEventListener("DOMContentLoaded", async () => {
                 let product_selected = products.filter(product => {
                     if (product.id === pid) return product;
                 });
-                console.log(product_selected);
 
 
                 product_selected = product_selected[0];
                 if (product_selected) {
                     // add product to the cart
                     cartNumbers(product_selected)
-                    supprimer(product_selected)
+                   // supprimer(product_selected)
 
                 }
             });
@@ -36,7 +40,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
     }
 
-});
+});*/
 
 
 
@@ -84,9 +88,7 @@ function cartNumbers(product) {
 
 function setItems(product) {
     let cartItems = localStorage.getItem('productsIncart');
-
     cartItems = JSON.parse(cartItems);
-    console.log(cartItems);
 
     if (cartItems != null) {
         if (cartItems[product.id] === undefined) {
@@ -105,7 +107,7 @@ function setItems(product) {
         cartItems[product.id] = product;
         cartItems[product.id].incart = 1;
 
-        console.log(cartItems);
+
     }
 
 
@@ -137,6 +139,8 @@ function chargerpanier() {
 
     let cartItems = localStorage.getItem("productsIncart");
     cartItems = JSON.parse(cartItems);
+
+    console.log(cartItems)
 
 
     let productContainer = document.querySelector
@@ -190,10 +194,7 @@ function chargerpanier() {
     }
 }
 
-function supprimer(id)
-{
-   console.log("id")
-}
+
 
 async function add_item(item_id)
 {
@@ -204,13 +205,4 @@ async function add_item(item_id)
     chargerpanier();
 }
 
-async function del()
-{
-    let cartItems = localStorage.getItem("productsIncart");
-    let elm = delete jsonItems["id"];
-    localStorage.setItem("productsIncart", JSON.stringify(elm))
-    chargerpanier();
-
-
-}
 onLoadcartNumbers();
