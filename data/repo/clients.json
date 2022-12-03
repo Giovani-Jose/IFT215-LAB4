@@ -128,18 +128,8 @@
         "courriel": "aaa@aaa.ca",
         "mdp": "$2b$08$gSPCYUrBBXZNFYwwpxvQo.xB.GxKwlgdEPWt.aMOadJC/vmtedsUC",
         "panier": {
-            "valeur": 24.11,
-            "items": [
-                {
-                    "id": 1,
-                    "idProduit": 2,
-                    "nomProduit": "Proteine IsoSplash saveur fraise-Banane",
-                    "descriptionProduit": "Proteine IsoSplash saveur fraise-Banane ",
-                    "prix": 24.11,
-                    "quantite": 1,
-                    "image": "./images/products/proteines_IsoSplash/IsolateSplashSmoothie_fraiseBanana.png"
-                }
-            ]
+            "valeur": 0,
+            "items": []
         },
         "historique": []
     },
@@ -259,6 +249,49 @@
         "mdp": "$2b$08$AqQ/q56.Q6A2w2/hWpeUzO1Ci0Q6Ybmvv3VGh4tO3tPhwUdkWwvWS",
         "panier": {
             "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 14,
+        "prenom": "samuel",
+        "nom": "tt",
+        "age": 1,
+        "adresse": "a",
+        "pays": "gtgtg",
+        "courriel": "samuel@yahoo.fr",
+        "mdp": "$2b$08$2DbB.XN0qjUaTETXwF0oxesh0BWCb4zxJRVvKfzU.H2QkYm1zLn3W",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    }
+]look.com",
+        "mdp": "$2b$08$AqQ/q56.Q6A2w2/hWpeUzO1Ci0Q6Ybmvv3VGh4tO3tPhwUdkWwvWS",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    },
+    {
+        "id": 14,
+        "prenom": "samuel",
+        "nom": "tt",
+        "age": 1,
+        "adresse": "a",
+        "pays": "gtgtg",
+        "courriel": "samuel@yahoo.fr",
+        "mdp": "$2b$08$2DbB.XN0qjUaTETXwF0oxesh0BWCb4zxJRVvKfzU.H2QkYm1zLn3W",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
+    }
+]: 0,
             "items": []
         },
         "historique": []

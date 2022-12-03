@@ -33,7 +33,7 @@
         "nom": "Proteine IsoSplash saveur fraise-Banane",
         "description": "Proteine IsoSplash saveur fraise-Banane ",
         "prix": 24.11,
-        "qte_inventaire": 202,
+        "qte_inventaire": 203,
         "categorie": {
             "id": 2,
             "nom": "IsoSplash ",

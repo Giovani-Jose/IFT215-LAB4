@@ -9,7 +9,7 @@ function chargerpanier() {
     }
     document.getElementById('cartItems').innerHTML = "";
     document.getElementById('checkout').innerHTML = "";
-    
+
     $.ajax({
         url: "/clients/"+IDCLIENT+"/panier",
         method:"GET",
@@ -46,7 +46,7 @@ function to_html(item){
             </div>
             <div class="prixPanier">
                 <div class="prixPanierText">$${item.prix}</div>
-                <div class="deletePanier"><u onclick="retirerItem(${item.id})">Remove</u></div>
+                <div class="deletePanier"><u onclick="retirerItem(${item.id}, false)">Remove</u></div>
             </div>
            </div> `
 
@@ -61,12 +61,12 @@ function checkoutHtml(nb, prix){
                 </div>
                 <div class="prixTotalPanier">$${prix}</div>
             </div>
-            <button class="btnCheckout">Checkout</button>`
+            <button class="btnCheckout" onclick="doCheckout()">Checkout</button>`
 
     return $('<div></div>').append(x);
 }
 
-function retirerItem(itemid){
+function retirerItem(itemid, vider){
     console.log("retirerObjet")
     $.ajax({
         url: "/clients/"+IDCLIENT+"/panier/"+itemid,
@@ -77,10 +77,34 @@ function retirerItem(itemid){
         },
         success: function(result) {
             console.log(result);
-            chargerpanier();
+            if(!vider) chargerpanier();
         },
         error: function (result){
             console.log(result);
         }
     });
+}
+
+function doCheckout(){
+    viderPanier()
+    alert("Commande réussie, retour à l'accueil")
+    window.location.replace('#/')
+}
+
+function viderPanier(){
+    $.ajax({
+        url: "/clients/"+IDCLIENT+"/panier",
+        method:"GET",
+        beforeSend: function (xhr){
+            xhr.setRequestHeader('Authorization', "Basic "+ TOKEN_CLIENT);
+        },
+        success: function(result) {
+            console.log(result.items)
+            $.each(result.items, function (key, value) {
+                retirerItem(value.id, true)
+            });
+            chargerpanier()
+        }
+    });
+
 }
