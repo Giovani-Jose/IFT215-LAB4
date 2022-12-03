@@ -90,9 +90,11 @@ console.log(IDCLIENT)
             xhr.setRequestHeader('Authorization', "Basic "+ TOKEN_CLIENT);
         },
         success: function(result) {
+            alert("Item ajouté au panier.")
             console.log(result);
         },
         error: function (result){
+            alert("Impossible d'ajouter cet item à votre panier")
             console.log(result);
         }
     });

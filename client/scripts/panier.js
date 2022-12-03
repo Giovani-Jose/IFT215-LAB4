@@ -44,7 +44,7 @@ function to_html(item){
             </div>
             <div class="prixPanier">
                 <div class="prixPanierText">$${item.prix}</div>
-                <div class="deletePanier"><u>Remove</u></div>
+                <div class="deletePanier"><u onclick="retirerItem(${item})">Remove</u></div>
             </div>
            </div> `
 
@@ -64,13 +64,20 @@ function checkoutHtml(nb, prix){
     return $('<div></div>').append(x);
 }
 
-async function add_item(item_id)
-{
-    let cartItems = localStorage.getItem("productsIncart");
-    let jsonItems = JSON.parse(cartItems)
-    delete jsonItems[item_id];
-    localStorage.setItem("productsIncart", JSON.stringify(jsonItems))
-    chargerpanier();
+function retirerItem(item){
+    $.ajax({
+        url: "/clients/"+IDCLIENT+"/panier/"+item.idProduit,
+        method:"DELETE"
+        ,
+        beforeSend: function (xhr){
+            xhr.setRequestHeader('Authorization', "Basic "+ TOKEN_CLIENT);
+        },
+        success: function(result) {
+            console.log(result);
+            chargerpanier();
+        },
+        error: function (result){
+            console.log(result);
+        }
+    });
 }
-
-onLoadcartNumbers();
