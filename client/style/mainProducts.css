@@ -53,6 +53,7 @@ Latest Products
 */
 .title__container {
   background-color: orange;
+  width: 95%;
   border-radius: 2rem;
   display: flex;
   align-items: center;
@@ -479,90 +480,6 @@ Category Center
 
 }
 
-/*
-======================
-Go Up
-======================
-*/
-.goto-top:link,
-.goto-top:visited {
-  position: fixed;
-  right: 2%;
-  bottom: 10%;
-  padding: 0.8rem 1.4rem;
-  border-radius: 1rem;
-  background-color: var(--orange);
-  visibility: hidden;
-  cursor: pointer;
-  transition: 0.3s;
-  animation: bounce 2s ease-in-out infinite;
-}
-
-.show-top:link,
-.show-top:visited {
-  visibility: visible;
-  z-index: 1999;
-}
-
-@keyframes bounce {
-  0% {
-    transform: scale(0.5);
-  }
-
-  50% {
-    transform: scale(1.5);
-  }
-
-  0% {
-    transform: scale(1);
-  }
-}
-
-.goto-top svg {
-  width: 1.3rem;
-  height: 1.3rem;
-  fill: var(--white);
-}
-
-.goto-top:hover {
-  background-color: var(--black4);
-}
-
-@media only screen and (max-width: 768px) {
-  .goto-top:link,
-  .goto-top:visited {
-    right: 5%;
-    bottom: 5%;
-  }
-}
-
-/*
-======================
-Facility Media Query
-======================
-*/
-@media only screen and (max-width: 998px) {
-  .facility__contianer {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 5rem;
-  }
-}
-
-@media only screen and (max-width: 568px) {
-  .facility__contianer {
-    grid-template-columns: 1fr;
-  }
-
-  .facility-img__container {
-    width: 7rem;
-    height: 7rem;
-    line-height: 10.5rem;
-  }
-
-  .facility__contianer p {
-    font-size: 1.4rem;
-  }
-}
 
 .cart {
   margin: 10rem auto;
@@ -819,9 +736,7 @@ th:last-child {
   border-radius: 30px;
   transition: background 0.5s;
 }
-header{
-  background: var(--white);
-}
+
 .btn:hover{
   background: var(--orange);
 }

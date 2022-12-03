@@ -280,5 +280,20 @@
             "items": []
         },
         "historique": []
+    },
+    {
+        "id": 14,
+        "prenom": "samuel",
+        "nom": "tt",
+        "age": 1,
+        "adresse": "a",
+        "pays": "gtgtg",
+        "courriel": "samuel@yahoo.fr",
+        "mdp": "$2b$08$2DbB.XN0qjUaTETXwF0oxesh0BWCb4zxJRVvKfzU.H2QkYm1zLn3W",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
     }
 ]
