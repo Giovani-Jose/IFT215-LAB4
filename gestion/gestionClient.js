@@ -148,7 +148,7 @@ class GestionClient {
       if (item) {
         panier = this.collectionClient.modifierPanier(idClient, item.id, quantite);
       } else {
-        const item = new ItemPanier(-1, idProduit, produit.nom, produit.description, produit.prix, quantite);
+        const item = new ItemPanier(-1, idProduit, produit.nom, produit.description, produit.prix, quantite, produit.image);
         panier = this.collectionClient.ajoutePanier(idClient, item);
       }
 

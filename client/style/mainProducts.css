@@ -55,24 +55,6 @@ Reset
   h3, h4 {
     font-weight: 500;
   }
-  
-  /*
-  ======================
-  Header
-  ======================
-  */
-  
-  .header {
-    position: relative;
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 117rem;
-    margin: 0 auto;
-    padding: 0 1.6rem;
-  }
-  
   /*
   ======================
   Latest Products

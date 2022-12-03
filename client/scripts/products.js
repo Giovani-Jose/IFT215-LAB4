@@ -1,4 +1,5 @@
-
+let TOKEN_CLIENT = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZENsaWVudCI6MSwicm9sZSI6ImNsaWVudCIsImlhdCI6MTYzNjc1MjI1MywiZXhwIjoxODM2NzUyMjUzfQ.qMcKC0NeuVseNSeGtyaxUvadutNAfzxlhL5LYPsRB8k";
+let IDCLIENT = -1;
 
 /*
 =============
@@ -22,21 +23,17 @@ const getProducts = async () => {
 
 async function charger()
 {
-    //const products2 = await getProducts();
-    let products = [];
     $.ajax({
         url: '/produits',
         success: function(result) {
             $.each(result, function (key, value) {
                 item = item_to_html(value)
-                console.log(value)
+                //console.log(value)
                 $('#category-box').append(item);
             });
         }
     });
     const categoryCenter = document.querySelector('.category__center');
-    //displayProductItems(products,categoryCenter);
-    btn(products)
 }
 
 function item_to_html(item) {
@@ -67,7 +64,7 @@ function item_to_html(item) {
             <div class="product__price">
                 <h4>$${item.prix}</h4>
                
-                    <button type="button" class="product__btn" data-pid="${item.id}">Ajouter au panier</button>
+                    <button type="button" class="product__btn" data-pid="${item.id}" onclick="ajouterPanier(${item.id})">Ajouter au panier</button>
                
             </div>
             <ul>
@@ -79,48 +76,27 @@ function item_to_html(item) {
     return $('<div></div>').append(x);
 }
 
-function btn(products)
-{
-    let acheterBtn = document.querySelectorAll(".product__btn");
- 
- 
-     if (acheterBtn) {
-         Array.from(acheterBtn).forEach(btn => {
- 
-             btn.addEventListener('click', async e => {
-                 const target = e.target;
-                 if (!target) return;
-
-                 // console.log(e.target);
-                 const pid = parseInt(target.dataset.pid);
-                 console.log(target);
-                 // console.log(products);
- 
-                 // const products = await getProducts();
- 
-               let product_selected = products.filter(product => {
-                     if(product.id === pid){
-                        return product
-                     } 
-                 });
-
-                 product_selected = product_selected[0];
-                 if (product_selected) {
-                     // add product to the cart
-                     cartNumbers(product_selected)
-                     console.log("fr")
-
-                    // supprimer(product_selected)
- 
-                 }
-             });
-         });
- 
-     }
- 
+function ajouterPanier(itemID){
+    if(IDCLIENT == -1){
+        alert("Veuillez vous connecter.")
+        return;
+    }
+console.log(IDCLIENT)
+    $.ajax({
+        url: "/clients/"+IDCLIENT+"/panier",
+        method:"POST",
+        data: {"idProduit": itemID, "quantite": 1},
+        beforeSend: function (xhr){
+            xhr.setRequestHeader('Authorization', "Basic "+ TOKEN_CLIENT);
+        },
+        success: function(result) {
+            console.log(result);
+        },
+        error: function (result){
+            console.log(result);
+        }
+    });
 }
-
-
 function cartNumbers(product) {
 
 

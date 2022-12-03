@@ -19,7 +19,7 @@
         "nom": "Proteine PureEAA saveur bomboms blues",
         "description": "Proteine PureEAA saveur bomboms blues",
         "prix": 37.84,
-        "qte_inventaire": 75,
+        "qte_inventaire": 72,
         "categorie": {
             "id": 4,
             "nom": "PureEAA",
@@ -33,7 +33,7 @@
         "nom": "Proteine IsoSplash saveur fraise-Banane",
         "description": "Proteine IsoSplash saveur fraise-Banane ",
         "prix": 24.11,
-        "qte_inventaire": 204,
+        "qte_inventaire": 202,
         "categorie": {
             "id": 2,
             "nom": "IsoSplash ",
@@ -75,7 +75,7 @@
         "nom": "Proteine Whey saveur latté Matcha",
         "description": "Proteine Whey saveur latté Matcha",
         "prix": 25.11,
-        "qte_inventaire": 220,
+        "qte_inventaire": 217,
         "categorie": {
             "id": 5,
             "nom": "Whey",
