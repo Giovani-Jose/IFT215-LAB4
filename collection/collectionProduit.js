@@ -27,7 +27,7 @@ class CollectionProduit {
           const liste = JSON.parse(data);
           for (const elem in liste) {
             const c = liste[elem];
-            this.liste_produits.push(new Produit(c.id, c.serial, c.nom, c.description, c.prix, c.qte_inventaire, c.categorie));
+            this.liste_produits.push(new Produit(c.id, c.serial, c.nom, c.description, c.prix, c.qte_inventaire, c.categorie, c.image));
           }
         }
       });

@@ -1,5 +1,5 @@
 class Produit {
-  constructor (id, serial, nom, description, prix, quantiteInventaire, categorie) {
+  constructor (id, serial, nom, description, prix, quantiteInventaire, categorie, image) {
     this.id = id;
     this.serial = serial;
     this.nom = nom;
@@ -7,6 +7,7 @@ class Produit {
     this.prix = prix;
     this.qte_inventaire = quantiteInventaire;
     this.categorie = categorie;
+    this.image = image;
   }
 }
 

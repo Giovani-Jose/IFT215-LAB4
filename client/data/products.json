@@ -1,0 +1,121 @@
+{
+    "products": [{
+            "id": 6,
+            "title": "Proteine saveur Pina Colada",
+            "image": "./images/products/proteines_IsoSplash/IsolateSplashSmoothie_PinaColada.png",
+            "price": 24.11,
+            "category": "Featured Productst"
+        },
+
+        {
+            "id": 3,
+            "title": "Proteine Cocobanana",
+            "image": "./images/products/Proteine_VeganSmart/VeganSmart_Cocobanana.png",
+            "price": 11.99,
+            "category": "Featured Products"
+        },
+        {
+            "id": 4,
+            "title": "Proteine Fruits Rouges",
+            "image": "./images/products/proteines_IsoSplash/IsolateSplashSmoothie_FruitsRouges.png",
+            "price": 43.44,
+            "category": "Special Products"
+        },
+        {
+            "id": 8,
+            "title": "Proteine Blues",
+            "image": "./images/products/Proteines_PureAA/PureEAA_candyblue.png",
+            "price": 37.87,
+            "category": "Special Products"
+        },
+        {
+            "id": 5,
+            "title": "T shirt protein whey",
+            "image": "./images/products/Proteine_Whey/IsoWhey_Matcha_Latte.png",
+            "price": 25.11,
+            "category": "Special Products"
+        },
+
+        {
+            "id": 7,
+            "title": "Proteine Choco",
+            "image": "./images/products/Proteine_VeganSmart/VeganSmart_Chocolatepng.png",
+            "price": 11.99,
+            "category": "Featured Products"
+        },
+
+
+        {
+            "id": 10,
+            "title": "Banana",
+            "image": "./images/products/proteines_IsoSplash/IsolateSplash_bananaPop.png",
+            "price": 43.44,
+            "category": "Special Products"
+        },
+        {
+            "id": 11,
+            "title": "saveur bombons de melon",
+            "image": "./images/products/Proteines_PureAA/PureEAA_candypeach.png",
+            "price": 37.87,
+            "category": "Special Products"
+        },
+        {
+            "id": 13,
+            "title": "Saveur Chocolat",
+            "image": "images/products/Proteine_Whey/IsoWhey_choco.png",
+            "price": 69.00,
+            "category": "Trending Products"
+        },
+        {
+            "id": 12,
+            "title": "lactose Whey saveur Churro",
+            "image": "./images/products/Proteine_Whey/IsoWhey_Churro.png",
+            "price": 24.11,
+            "category": "Special Products"
+        },
+
+        {
+            "id": 14,
+            "title": "lactose Whey saveur menthe",
+            "image": "./images/products/Proteine_Whey/IsoWhey_menthe.png",
+            "price": 69.00,
+            "category": "Trending Products"
+        },
+        {
+            "id": 9,
+            "title": "Whey saveur Chocolat",
+            "image": "./images/products/Proteine_Whey/IsoWhey_choco.png",
+            "price": 24.11,
+            "category": "Special Products"
+        },
+        {
+            "id": 15,
+            "title": "Proteine saveur cerises",
+            "image": "./images/products/Proteines_PureAA/PureEAA_cerise.png",
+            "price": 37.87,
+            "category": "Trending Products"
+        },
+        {
+            "id": 16,
+            "title": "Proteine saveur Clementine",
+            "image": "./images/products/proteines_IsoSplash/IsolateSplash_clementine.png",
+            "price": 43.44,
+            "category": "Special Products"
+        },
+        {
+            "id": 17,
+            "title": "Proteine Whey saveur Vainille",
+            "image": "./images/products/Proteine_Whey/IsoWhey_vaini.png",
+            "price": 550,
+            "category": "Trending Products"
+        },
+        {
+            "id": 2,
+            "title": "Proteine saveur fraise",
+            "image": "./images/products/proteines_IsoSplash/IsolateSplashSmoothie_fraiseBanana.png",
+            "price": 24.15,
+            "category": "Special Products"
+        }
+
+    ]
+}

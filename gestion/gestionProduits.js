@@ -153,8 +153,9 @@ class GestionProduits {
       const prix = parseFloat(req.query.prix);
       const qteInventaire = parseInt(req.query.qte_inventaire);
       const categorie = req.query.categorie;
+      const image = req.query.image;
 
-      res.send(this.collectionProduit.rechercheProduit(serial, nom, description, prix, qteInventaire, categorie));
+      res.send(this.collectionProduit.rechercheProduit(serial, nom, description, prix, qteInventaire, categorie, image));
     } else { // sinon c'est un get avec ID ou sans contrainte
       let id = parseInt(req.params.idProduit);
       if (!(id >= 0)) { // sans la parenthese, !id est évalué avant le >= parce que javascript

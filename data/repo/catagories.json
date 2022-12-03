@@ -1,12 +1,25 @@
 [
     {
-        "id": 1,
-        "nom": "Prunier",
-        "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+        "id": 1
     },
     {
         "id": 2,
-        "nom": "Banane",
-        "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+        "nom": "IsoSplash ",
+        "description": "Proteine qui utilise un système d'arôme exclusif "
+    },
+    {
+        "id": 3,
+        "nom": "VeganSmart",
+        "description": "Mélange végétalien de protéines intelligentes (isolat de protéines de pois, protéines de riz brun et protéines de citrouille)"
+    },
+    {
+        "id": 4,
+        "nom": "PureEAA",
+        "description": "Proteines à bases d'acides aminés, éléments constitutifs des protéines des animaux "
+    },
+    {
+        "id": 5,
+        "nom": "Whey",
+        "description": "Concentré de protéines de lactosérum obtenu à partir d'un procédé de microfiltration à flux croisés"
     }
 ]
