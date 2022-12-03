@@ -7,7 +7,9 @@ function chargerpanier() {
         window.location.replace("#/connexion")
         return;
     }
-
+    document.getElementById('cartItems').innerHTML = "";
+    document.getElementById('checkout').innerHTML = "";
+    
     $.ajax({
         url: "/clients/"+IDCLIENT+"/panier",
         method:"GET",
@@ -44,7 +46,7 @@ function to_html(item){
             </div>
             <div class="prixPanier">
                 <div class="prixPanierText">$${item.prix}</div>
-                <div class="deletePanier"><u onclick="retirerItem(${item})">Remove</u></div>
+                <div class="deletePanier"><u onclick="retirerItem(${item.id})">Remove</u></div>
             </div>
            </div> `
 
@@ -64,9 +66,10 @@ function checkoutHtml(nb, prix){
     return $('<div></div>').append(x);
 }
 
-function retirerItem(item){
+function retirerItem(itemid){
+    console.log("retirerObjet")
     $.ajax({
-        url: "/clients/"+IDCLIENT+"/panier/"+item.idProduit,
+        url: "/clients/"+IDCLIENT+"/panier/"+itemid,
         method:"DELETE"
         ,
         beforeSend: function (xhr){

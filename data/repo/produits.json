@@ -19,7 +19,7 @@
         "nom": "Proteine PureEAA saveur bomboms blues",
         "description": "Proteine PureEAA saveur bomboms blues",
         "prix": 37.84,
-        "qte_inventaire": 72,
+        "qte_inventaire": 74,
         "categorie": {
             "id": 4,
             "nom": "PureEAA",
@@ -75,7 +75,7 @@
         "nom": "Proteine Whey saveur latté Matcha",
         "description": "Proteine Whey saveur latté Matcha",
         "prix": 25.11,
-        "qte_inventaire": 217,
+        "qte_inventaire": 219,
         "categorie": {
             "id": 5,
             "nom": "Whey",

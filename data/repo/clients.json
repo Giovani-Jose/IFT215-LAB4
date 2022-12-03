@@ -128,17 +128,8 @@
         "courriel": "aaa@aaa.ca",
         "mdp": "$2b$08$gSPCYUrBBXZNFYwwpxvQo.xB.GxKwlgdEPWt.aMOadJC/vmtedsUC",
         "panier": {
-            "valeur": 150.01,
+            "valeur": 24.11,
             "items": [
-                {
-                    "id": 0,
-                    "idProduit": 1,
-                    "nomProduit": "Proteine PureEAA saveur bomboms blues",
-                    "descriptionProduit": "Proteine PureEAA saveur bomboms blues",
-                    "prix": 37.84,
-                    "quantite": 2,
-                    "image": "./images/products/Proteines_PureAA/PureEAA_candyblue.png"
-                },
                 {
                     "id": 1,
                     "idProduit": 2,
@@ -147,15 +138,6 @@
                     "prix": 24.11,
                     "quantite": 1,
                     "image": "./images/products/proteines_IsoSplash/IsolateSplashSmoothie_fraiseBanana.png"
-                },
-                {
-                    "id": 2,
-                    "idProduit": 5,
-                    "nomProduit": "Proteine Whey saveur latté Matcha",
-                    "descriptionProduit": "Proteine Whey saveur latté Matcha",
-                    "prix": 25.11,
-                    "quantite": 2,
-                    "image": "./images/products/Proteine_Whey/IsoWhey_Matcha_Latte.png"
                 }
             ]
         },
