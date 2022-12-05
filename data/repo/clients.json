@@ -267,15 +267,8 @@
             "items": []
         },
         "historique": []
-    }
-]look.com",
-        "mdp": "$2b$08$AqQ/q56.Q6A2w2/hWpeUzO1Ci0Q6Ybmvv3VGh4tO3tPhwUdkWwvWS",
-        "panier": {
-            "valeur": 0,
-            "items": []
-        },
-        "historique": []
     },
+
     {
         "id": 14,
         "prenom": "samuel",
@@ -290,12 +283,8 @@
             "items": []
         },
         "historique": []
-    }
-]: 0,
-            "items": []
-        },
-        "historique": []
     },
+
     {
         "id": 14,
         "prenom": "samuel",
